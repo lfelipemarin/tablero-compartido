@@ -13,7 +13,7 @@ function sendText(json) {
 
 function onMessage(evt) {
     console.log("recibido: " + evt.data);
-    drawImageText(evt.data);
+    draw(evt.data);
 }
 
 websocket.onerror = function (evt) {
